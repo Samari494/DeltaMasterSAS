@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Estilos.css">
+    <title>Contactanos</title>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="Logo.jpeg" alt="Logo empresa">
+            <h1 class="nombre empresa">Delta Master SAS</h1>
+        </div>
+        <nav>
+            <a href="Inicio.html" class="nav-link">Inicio</a>
+            <a href="QuienesSomos.html" class="nav-link">Quienes Somos</a>
+            <a href="NuestrosProductos.html" class="nav-link">Nuestros Productos</a>
+            <a href="Mercados.html" class="nav-link">Mercados</a>
+            <a href="Contactanos.html" class="nav-link">Contactanos</a>
+        </nav> 
+    </header>
+    <br>
+    <main class="formulario">
+        <h2>Dejanos tus datos y pronto nos comunicaremos contigo</h2>
+         &nbsp; <img class= "rithg" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpZap7SytviVLr9hKkA4QxBEKYm8FB3e5f3_iiAaUs8Qsk9cdcmhWNvbk4VIHshG-gsRI&usqp=CAU" width="350px">
+        <br>
+        <form class="left" action="contact.php" method="post"> 
+            <div class="elem-group"> 
+                &nbsp; <label for="name">Nombre</label> 
+                <input type="text" id="name" name="visitor_name" placeholder="Nombre de ejemplo" pattern=[A-Z\sa-z]{3,20} required>
+            </div>     
+            <div class="elem-group"> 
+                &nbsp; <label for="email">Correo electrónico</label> 
+                <input type="email" id="email" name="visitor_email" placeholder="ejemplo@email.com" required> 
+            </div> 
+            <div class="elem-group"> 
+                &nbsp; <label for="department-selection">Área a contactar</label> 
+                <select id="department-selection" name="concerned_department" required> 
+                    <option value="">Selecciona un área</option> 
+                    <option value="billing">Facturación</option> 
+                    <option value="marketing">Marketing</option> 
+                    <option value="technical support">Servicio al cliente</option> 
+                </select> 
+            </div> 
+            <div class="elem-group"> 
+                &nbsp; <label for="title">Motivo de contacto</label> 
+                <input type="text" id="title" name="email_title" required placeholder="Problema/Consulta" pattern=[A-Za-z0-9\s]{8,60}> 
+            </div>
+            <div class="elem-group"> 
+                &nbsp; <label for="message">Solicitud</label>
+                <br>
+                &nbsp; <textarea id="message" name="visitor_message" placeholder="Escribe tu mensaje aquí." required></textarea>
+            </div> 
+            &nbsp; <button type="submit">Enviar mensaje</button>
+          <br> 
+        </form>
+   </main>
+<br> 
+
+    <footer>Delta Master SAS<br>Dirección:calle 45 sur # 72 U - 20 Barrio Boita<br>Bogotá-Colombia<br>Teléfono: 301 670 44 80<br>Correo: deltamastersas@outlook.com</footer>
+</body>
+</html>
